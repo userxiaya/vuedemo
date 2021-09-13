@@ -3,7 +3,6 @@
   <div ref="echartRef" class="table">ds</div>
 </template>
 <script setup>
-/* eslint-disable no-unused-vars */
 import * as echarts from 'echarts'
 import { onMounted, ref, defineProps, computed, watch } from 'vue'
 
@@ -21,6 +20,7 @@ const props = defineProps({
     }
   }
 })
+
 const echartRef = ref(null)
 let myChart = null
 onMounted(() => {

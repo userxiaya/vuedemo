@@ -3,7 +3,7 @@ module.exports = {
     loaderOptions: {
       less: {
         lessOptions: {
-          javaScriptEnabled: true
+          javascriptEnabled: true
         }
       }
     }
