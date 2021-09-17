@@ -43,30 +43,80 @@ const columns = [
     key: 'keyword'
   },
   {
-    title: '搜索量',
+    title: '搜索热度',
     dataIndex: 'latest_s_v',
     align: 'center',
-    width: 100,
+    width: 80,
     key: 'latest_s_v'
   },
   {
     title: '当前排名',
     dataIndex: 'latest_rank',
     align: 'center',
-    width: 100,
+    width: 80,
     key: 'latest_rank'
   },
   {
-    title: '排名变化',
-    dataIndex: 'latest_rank',
+    title: '肯定词',
+    dataIndex: 'if_affirmed',
+    align: 'center',
+    width: 50,
+    key: 'if_affirmed'
+  },
+  {
+    title: '否定词',
+    dataIndex: 'if_negative',
+    align: 'center',
+    width: 50,
+    key: 'if_negative'
+  },
+  {
+    title: '曝光量',
+    dataIndex: 'expose',
+    align: 'center',
+    width: 50,
+    key: 'expose'
+  },
+  {
+    title: '点击数',
+    dataIndex: 'clicks',
+    align: 'center',
+    width: 50,
+    key: 'clicks'
+  },
+  {
+    title: 'CTR',
+    dataIndex: 'ctr',
+    align: 'center',
+    width: 50,
+    key: 'ctr'
+  },
+  {
+    title: 'CVR',
+    dataIndex: 'cvr',
+    align: 'center',
+    width: 50,
+    key: 'cvr'
+  },
+  {
+    title: '广告ROI',
+    dataIndex: 'roi',
+    align: 'center',
+    width: 50,
+    key: 'roi'
+  },
+  {
+    title: '广告组',
+    dataIndex: 'ad_group',
     align: 'center',
     width: 200,
-    key: 'latest_rank'
+    key: 'ad_group'
   },
   {
     title: 'table',
     key: 'table',
     align: 'center',
+    fixed: 'right',
     width: 500,
     customRender: ({ text, index }) => {
       const obj = {
