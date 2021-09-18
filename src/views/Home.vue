@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <SearchForm @search="onSearch"/>
-    <a-table :loading="loading" bordered :pagination="pagination" :dataSource="dataSource" :columns="columns" rowKey="keyword" :customRow="customRow" @change="change">
+    <a-table :scroll="{y: 600, x:800}" :loading="loading" bordered :pagination="pagination" :dataSource="dataSource" :columns="columns" rowKey="keyword" :customRow="customRow" @change="change">
       <template #table="{ record }">
         {{record}}
       </template>
@@ -195,6 +195,10 @@ const onSearch = (data) => {
        justify-content: center;
        padding: 15px;
        border-radius: 5px;
+    }
+    :global(.ant-table-cell-fix-right-first) {
+       position: sticky;
+       top: 20px;
     }
 }
 </style>
