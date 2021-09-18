@@ -136,10 +136,11 @@ const columns = [
 ]
 const getData = () => {
   const { pageSize, current: page } = pagination
-  const { keyword = '', asin = '' } = searchData
+  const { keyword = '', asin = '', checkType = '' } = searchData
   const params = {
-    pageSize: pageSize,
-    page: page,
+    pageSize,
+    checkType,
+    page,
     asin,
     keyword
   }

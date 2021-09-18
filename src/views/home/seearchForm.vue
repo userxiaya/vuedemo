@@ -9,8 +9,8 @@
       <a-input v-model:value="formState.asin" placeholder="ASIN" />
     </a-form-item>
     <a-form-item label="搜索方式" v-bind="validateInfos.checkType" >
-        <a-select v-once v-model:value="formState.checkType" style="width: 180px" placeholder="请选择搜索方式">
-            <a-select-option v-for="item in searchTypeOpt" :key="item.value" :value="item.value">{{item.label}}</a-select-option>
+        <a-select allowClear v-model:value="formState.checkType" style="width: 180px" placeholder="请选择搜索方式">
+            <a-select-option v-for="item in searchTypeOpt" v-once :key="item.value" :value="item.value">{{item.label}}</a-select-option>
         </a-select>
     </a-form-item>
 

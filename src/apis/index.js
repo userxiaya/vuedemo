@@ -1,6 +1,6 @@
 import request from '../utils/request'
 
-export const getTableList = ({ page = 1, pageSize = 10, keyword = '', asin = '' }) => {
+export const getTableList = ({ page = 1, pageSize = 10, keyword = '', asin = '', checkType = '' }) => {
   return request({
     url: '/checkByWord',
     type: 'GET',
@@ -8,7 +8,8 @@ export const getTableList = ({ page = 1, pageSize = 10, keyword = '', asin = '' 
       page,
       qty: pageSize,
       asin,
-      keyword
+      keyword,
+      checkType
     }
   })
 }
